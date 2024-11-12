@@ -1,0 +1,50 @@
+:root {
+    --cappucciono: #82663F;
+    --cyan: #00FFF3;
+    --lavanda: #8287D7;
+    --blanco: #ffffff;
+    --dark_blue: #000E2E;
+    --celeste: #718ce5;
+    --fuentePrincipal: "Nosifer", sans-serif;
+  }
+  
+  body {
+    font-family: var(--fuentePrincipal);
+    background-color: var(--dark_blue);
+    color: var(--blanco);
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: var(--dark_blue);
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  .nav a {
+    color: var(--cyan);
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    color: var(--lavanda);
+    transition: color 0.3s;
+  }
+  
+  .main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: var(--cappucciono);
+    padding: 10px;
+    text-align: center;
+  }
+  
