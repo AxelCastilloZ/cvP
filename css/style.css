@@ -59,16 +59,16 @@
     background-color: var(--lavanda);
     border: 4px solid #000; 
     border-radius: 2rem; 
-    padding: 20px; /* Agregado para algo de espacio interno */
+    padding: 20px; 
     display: flex;
-    flex-direction: column; /* Esto pone los elementos en columna */
-    align-items: center; /* Centra el contenido horizontalmente */
-    text-align: center; /* Asegura que el texto también esté centrado */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
 }
 
 .project img {
     width: 300px;
-    margin-bottom: 15px; /* Espacio entre la imagen y el enlace */
+    margin-bottom: 15px; 
 }
 
 .project a {
@@ -83,6 +83,13 @@
     transition: color 0.3s;
 }
 
+h1{
+  color: var(--blanco);
+}
+
+p{
+  color: var(--blanco);
+}
   
 #principal h1{
     text-align: left;
@@ -93,3 +100,64 @@
     margin-top: 3rem;
     text-align: left;
 }
+
+
+
+@media (max-width: 768px) {
+  .project {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 15px;
+  }
+
+  img {
+    width: 100%; 
+  }
+
+  .nav {
+    flex-direction: column; 
+    padding: 10px;
+  }
+
+  .nav a {
+    margin: 5px 0; 
+  }
+
+  #principal h1 {
+    font-size: 3rem; 
+    text-align: center; 
+  }
+
+  #principal p {
+    margin-top: 1.5rem;
+    text-align: center; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .project {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%; 
+  }
+
+  .nav a {
+    font-size: 1rem; 
+  }
+
+  #principal h1 {
+    font-size: 2.5rem; 
+  }
+}
+
+
+.btn-outline-light:hover {
+  color: var(--dark_blue);
+  transition: color 0.3s;
+}
+
